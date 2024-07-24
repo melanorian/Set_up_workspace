@@ -25,7 +25,7 @@ Info: https://code.visualstudio.com/docs/remote/ssh
 
 7. Promt to enter password(s)
 
-## 3. VS code for Python-based data analysis 
+### 3. VS code for Python-based data analysis 
 
 Prefered set-up to have VS code interface resemble R studio. 
 Set up from: https://www.r-bloggers.com/2020/07/setting-up-vs-code-for-python-development-like-rstudio/ 
