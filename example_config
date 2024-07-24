@@ -1,0 +1,11 @@
+
+Host mylogin_server.uu.nl
+  HostName mylogin_server.uu.nl
+  User myusername
+  Port 22
+  ForwardAgent yes
+
+Host my_server
+  HostName my_server
+  User myusername
+  ProxyJump mylogin_server.uu.nl
