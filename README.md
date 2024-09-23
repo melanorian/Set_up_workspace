@@ -24,7 +24,7 @@ Info: https://code.visualstudio.com/docs/remote/ssh
     - e.g. specify forwarding, username,... (see example_config)
   
 7. open a terminal in VS Code
-    - Terminal/New Terminal or ctrl+ shift+
+    - Terminal/New Terminal or ctrl+ shift+ ` 
 
 7. Promt to enter password(s)
    If your connection specified in the config file includes a host jumb you might be promted to type passwords for each server. Be prepared to type passwords >1 time.
