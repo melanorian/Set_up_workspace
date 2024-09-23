@@ -32,6 +32,11 @@ Info: https://code.visualstudio.com/docs/remote/ssh
 8. Re-connect to the server
    Click the icon for " remote explorer" to see the list of severs you set up connections to. Click on the server you want to connect to and you'll be propted to type out your password(s)
 
+9. View folders on remote server in your VS Code explorer
+    - open the explorer with ctrl + shift + E
+    - select the folder structure you want to view
+    - a new window will open with your selection, happy bowsing 
+
 ### 3. VS code for Python-based data analysis 
 
 Prefered set-up to have VS code interface resemble R studio. 
