@@ -22,8 +22,15 @@ Info: https://code.visualstudio.com/docs/remote/ssh
 6. open config file where instructions for the ssh connection are described
     - file pathe: drive/user/.ssh/config
     - e.g. specify forwarding, username,... (see example_config)
+  
+7. open a terminal in VS Code
+    - Terminal/New Terminal or ctrl+ shift+
 
 7. Promt to enter password(s)
+   If your connection specified in the config file includes a host jumb you might be promted to type passwords for each server. Be prepared to type passwords >1 time.
+
+8. Re-connect to the server
+   Click the icon for " remote explorer" to see the list of severs you set up connections to. Click on the server you want to connect to and you'll be propted to type out your password(s)
 
 ### 3. VS code for Python-based data analysis 
 
