@@ -42,3 +42,7 @@ Info: https://code.visualstudio.com/docs/remote/ssh
 Prefered set-up to have VS code interface resemble R studio. 
 Set up from: https://www.r-bloggers.com/2020/07/setting-up-vs-code-for-python-development-like-rstudio/ 
 File path on current machine: /home/melanie/.vscode-server/data/Machine/settings.json
+
+## GitHub
+Info: https://docs.github.com/en/get-started/getting-started-with-git/set-up-git
+
