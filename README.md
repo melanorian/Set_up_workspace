@@ -92,14 +92,32 @@ Yeahhii, we sucesfully generated an SSH key for authentication
 ### Safe your code on GitHub
 
 #### 1. Create a new project on GitHub and clone it to your machine
+When you start a new project, this is the easiest way to get started. You create a repo on GitHub (browser) and clone it to your machine.
 
-    a) Create a new repository on GitHub
-        - log into your GitHub account using your browser
-- navigate to the list of your repositories (https://github.com/USERNAME?tab=repositories)
-- click "New" (green botton right corner)
-- Fill in repo name, ownder, select public/private repo, description of the repo
-- "Create repository" (green button at the end of the page)
+a) Create a new repository on GitHub
+    - log into your GitHub account using your browser
+    - navigate to the list of your repositories (https://github.com/USERNAME?tab=repositories)
+    - click "New" (green botton right corner)
+    - Fill in repo name, ownder, select public/private repo, description of the repo
+    - "Create repository" (green button at the end of the page)
 
+b) Clone the new repository to your machine
+    - navigate to your new repo/ the repo you want to clone in the browser version of GitHub
+    - click on "Code" (green botton upper right side)
+    - select SSH and copy the link, the format should follow git@github.com:USERNAME/reponame.git
+    - switch to the terminal of your machine
+    - navigate to the location where you want to clone your GitHub repo
+    - type `git clone` + git@github.com:USERNAME/reponame.git
+    - press enter and possibly confirm your choice of cloning your repo
+
+You should now see the repo you created on GitHub cloned on your server!
 
 #### 2. Push an existing directory on your machine to GitHub
+If you already created/worked on a project on a machine you can still push it to your GitHub and enjoy all the advantages. I assume you already set up the SSH key, now follow these steps:
+
+a) Create a git repository on your machine
+    - avigate to your projects' directory on your machine
+    - Type `git init`. This will create an empty Git repository. 
+    - Type ` git add .`. This will add the files in the directory to the newly created git repository and prepare the content staged for the next commit.
+    - Type `git commit` This command commits all repo changes https://git-scm.com/docs/git-commit
 
