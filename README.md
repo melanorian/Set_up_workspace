@@ -44,16 +44,62 @@ Set up from: https://www.r-bloggers.com/2020/07/setting-up-vs-code-for-python-de
 File path on current machine: /home/melanie/.vscode-server/data/Machine/settings.json
 
 ## GitHub
+
 ### Why use gitHub?
 GitHub helps you to keep track of your codes' versions, facilitates sharing and publishing your code in accordance with best practices on reproducibility, colaborating with others on shared projects, last but not least, you store your code at a safe location. To get the most out of GitHub you should safe your code at regular intervals e.g. at the end of every working-day, after major changes in your code e.g. fixing a bug, and tag a version that you used to generate output files, if you continue modifying your scripts afterwards. Once you establish your workflow using gitHub, it'll be easy to maintain and trace your work.
 
-To get started with gitHub:
+### Set-up GitHub
 
 1. Create a gitHub account and set up 2FA authentication for logging in.
-2. Check/ensure that Git is installed on the macine you use for work
+2. Check/ensure that Git is installed on the machine you work on
    
-Type 'git --version' to see which version of git is installed, if any. If a version is returned, you are ready to go. If not, check the link below to help you set up git:
+Type `git --version` to see which version of git is installed, if any. If a version is returned, you are ready to go. If not, check the link below to help you set up git:
 
 https://docs.github.com/en/get-started/getting-started-with-git/set-up-git
 
+3. Set-up an SSH key for authentication
+To connect your gitHub account with your server you need to use an authentication protocol. To avoid using a password everytime we will use an SSH key for authentication. For this, you generate/use a private key and a public key on your computer and deposit your public key on gitHub.
+
+   a) Check if you already have an SSH key
+       - move to your home directory
+       - type `ls -a`
+       - you'll find a hidden directory called /.ssh
+       - check the content of this directory `ls`
+       - an SSH key should look like this: id_ed25519  id_ed25519.pub - the .pub is your public key, the other file is your private key
+       - if you alraedy have an SSH key, skip the following step of generating an SSH key 
+   
+   b) Generate an SSH key
+       - find detailed instructions at: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
+       - navigate to the /.ssh directory
+       - type `ssh-keygen -t ed25519-sk -C "your_email@example.com"` to generate an SSH key using the Ed25519 algorithm. Note: not all algorithms are supported by GitHub.
+       - you should now see the key in your ./.ssh directory listed at id_ed25519  and id_ed25519.pub
+
+   c) Add your public key on GitHub for a smooth authentication
+       - follow instructions at https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account
+       - copy your pubilc SSH key: `cat ~/.ssh/id_ed25519.pub`
+       - Naviage to your gitHub account in your browser
+       - In the upper-right corner of any page on GitHub, click your profile photo, then click  Settings (little wheel icon)
+       - in the "Access" section of the sidebar, click  SSH and GPG keys.
+       - Click New SSH key or Add SSH key.
+       - In the "Title" field, add a descriptive label for the new key, e.g. the name of the server you work on "PMI_server"
+       - Select the type of key as authentication
+       - In the "Key" field, paste your public key.
+       - lick Add SSH key
+       - If prompted, confirm access to your account on GitHub. For more information
+
+Yeahhii, we sucesfully generated an SSH key for authentication
+
+### Safe your code on GitHub
+
+#### 1. Create a new project on GitHub and clone it to your machine
+
+    a) Create a new repository on GitHub
+        - log into your GitHub account using your browser
+- navigate to the list of your repositories (https://github.com/USERNAME?tab=repositories)
+- click "New" (green botton right corner)
+- Fill in repo name, ownder, select public/private repo, description of the repo
+- "Create repository" (green button at the end of the page)
+
+
+#### 2. Push an existing directory on your machine to GitHub
 
