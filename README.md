@@ -44,5 +44,16 @@ Set up from: https://www.r-bloggers.com/2020/07/setting-up-vs-code-for-python-de
 File path on current machine: /home/melanie/.vscode-server/data/Machine/settings.json
 
 ## GitHub
-Info: https://docs.github.com/en/get-started/getting-started-with-git/set-up-git
+### Why use gitHub?
+GitHub helps you to keep track of your codes' versions, facilitates sharing and publishing your code in accordance with best practices on reproducibility, colaborating with others on shared projects, last but not least, you store your code at a safe location. To get the most out of GitHub you should safe your code at regular intervals e.g. at the end of every working-day, after major changes in your code e.g. fixing a bug, and tag a version that you used to generate output files, if you continue modifying your scripts afterwards. Once you establish your workflow using gitHub, it'll be easy to maintain and trace your work.
+
+To get started with gitHub:
+
+1. Create a gitHub account and set up 2FA authentication for logging in.
+2. Check/ensure that Git is installed on the macine you use for work
+   
+Type 'git --version' to see which version of git is installed, if any. If a version is returned, you are ready to go. If not, check the link below to help you set up git:
+
+https://docs.github.com/en/get-started/getting-started-with-git/set-up-git
+
 
