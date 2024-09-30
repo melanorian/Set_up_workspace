@@ -1,4 +1,4 @@
-# Set_up_workspace
+# Set up workspace
 Relevant info to set up my preferred work environment 
 
 ## VS code 
@@ -121,7 +121,7 @@ a) Create a git repository on your machine
     - Type ` git add .`. This will add the files in the directory to the newly created git repository and prepare the content staged for the next commit.
     - Type `git commit` This command commits all repo changes https://git-scm.com/docs/git-commit
 
-b) Connect your local repository to a remote GitHub repository
+b) Fill your remote GitHub repository with the code base on your machine
     - navigate to your repo list in the GitHub browser
     - create an empty repo with the name of the project you have on your machine
     - After creating the exmpty repo you will find instructions to push an existing repo from the command line
@@ -131,3 +131,5 @@ git remote add origin git@github.com:USERNAME/reponame.git
 git branch -M main
 git push -u origin main
 ```
+
+    - This code connects your local repo to the remote GitHub repo, renames the current branch to main and pushes the main branch to GitHub setting it as the default upstream branch for future interactions 
