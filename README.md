@@ -134,3 +134,13 @@ git push -u origin main
 ```
 Happy GitHubbin
 
+#### 3. Basic commands for using git
+
+`git clone` Clone a repo, as it is, to a directory. It also creates remote-tracking branches for each branch in the cloned repository
+- `git status` check the status of your repository
+- `git add` from your working directory you add changes to the staging area
+- `git commit` from the staging area you commit changes to your git repository
+- `git push` Creates a copy of your local git repo in the remote repo
+- `git pull` updates local git repo with changes made on the remote repo, careful, if you modified both versions you'll run into a merge conflict that needs to be resolved. Git will not know which changes are the "correct" changes that you want to keep
+
+
