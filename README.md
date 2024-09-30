@@ -125,6 +125,9 @@ b) Connect your local repository to a remote GitHub repository
     - navigate to your repo list in the GitHub browser
     - create an empty repo with the name of the project you have on your machine
     - After creating the exmpty repo you will find instructions to push an existing repo from the command line
-```it remote add origin git@github.com:melanorian/aljf.git
+
+```
+git remote add origin git@github.com:USERNAME/reponame.git
 git branch -M main
-git push -u origin main```
+git push -u origin main
+```
