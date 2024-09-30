@@ -136,7 +136,6 @@ Happy GitHubbin
 
 #### 3. Basic commands for using git
 
-`git clone` Clone a repo, as it is, to a directory. It also creates remote-tracking branches for each branch in the cloned repository
 - `git status` check the status of your repository
 - `git add` from your working directory you add changes to the staging area
 - `git commit` from the staging area you commit changes to your git repository
