@@ -122,6 +122,7 @@ a) Create a git repository on your machine
     - Type `git commit` This command commits all repo changes https://git-scm.com/docs/git-commit
 
 b) Fill your remote GitHub repository with the code base on your machine
+This section connects your local repo to the remote GitHub repo, renames the current branch to main and pushes the main branch to GitHub setting it as the default upstream branch for future interactions 
     - navigate to your repo list in the GitHub browser
     - create an empty repo with the name of the project you have on your machine
     - After creating the exmpty repo you will find instructions to push an existing repo from the command line
@@ -131,5 +132,5 @@ git remote add origin git@github.com:USERNAME/reponame.git
 git branch -M main
 git push -u origin main
 ```
+Happy GitHubbin
 
-    - This code connects your local repo to the remote GitHub repo, renames the current branch to main and pushes the main branch to GitHub setting it as the default upstream branch for future interactions 
