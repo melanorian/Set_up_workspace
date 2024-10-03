@@ -71,12 +71,15 @@ To connect your gitHub account with your server you need to use an authenticatio
    b) Generate an SSH key
        - find detailed instructions at: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
        - navigate to the /.ssh directory
-       - type `ssh-keygen -t ed25519-sk -C "your_email@example.com"` to generate an SSH key using the Ed25519 algorithm. Note: not all algorithms are supported by GitHub.
+       - type
+   `ssh-keygen -t ed25519-sk -C "your_email@example.com"`
+         to generate an SSH key using the Ed25519 algorithm. Note: not all algorithms are supported by GitHub.
        - you should now see the key in your ./.ssh directory listed at id_ed25519  and id_ed25519.pub
 
    c) Add your public key on GitHub for a smooth authentication
        - follow instructions at https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account
-       - copy your public SSH key: `cat ~/.ssh/id_ed25519.pub`
+       - copy your public SSH key:
+    `cat ~/.ssh/id_ed25519.pub`
        - Navigate to your gitHub account in your browser
        - In the upper-right corner of any page on GitHub, click your profile photo, then click  Settings (little wheel icon)
        - in the "Access" section of the sidebar, click  SSH and GPG keys.
