@@ -50,17 +50,17 @@ GitHub helps you to keep track of your codes' versions, facilitates sharing and 
 
 ### Set-up GitHub
 
-1. Create a gitHub account and set up 2FA authentication for logging in.
-2. Check/ensure that Git is installed on the machine you work on
+#### 1. Create a gitHub account and set up 2FA authentication for logging in.
+#### 2. Check/ensure that Git is installed on the machine you work on
    
 Type `git --version` to see which version of git is installed, if any. If a version is returned, you are ready to go. If not, check the link below to help you set up git:
 
 https://docs.github.com/en/get-started/getting-started-with-git/set-up-git
 
-3. Set-up an SSH key for authentication
+#### 3. Set-up an SSH key for authentication
 To connect your gitHub account with your server you need to use an authentication protocol. To avoid using a password every time we will use an SSH key for authentication. For this, you generate/use a private key and a public key on your computer and deposit your public key on gitHub.
 
-   a) Check if you already have an SSH key
+####   a) Check if you already have an SSH key
 - move to your home directory
 - type `ls -a`
 - you'll find a hidden directory called /.ssh
@@ -68,15 +68,16 @@ To connect your gitHub account with your server you need to use an authenticatio
 - an SSH key should look like this: id_ed25519  id_ed25519.pub - the .pub is your public key, the other file is your private key
 - if you already have an SSH key, skip the following step of generating an SSH key 
    
-   b) Generate an SSH key
+####   b) Generate an SSH key
 - find detailed instructions at: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
 - navigate to the /.ssh directory
 - type
    `ssh-keygen -t ed25519-sk -C "your_email@example.com"`
   to generate an SSH key using the Ed25519 algorithm. Note: not all algorithms are supported by GitHub.
+- You'll be prompted to answer a number of questions e.g. change the name of the key, add a pass phrase/ pass word: skip those fields by pressing ENTER
 - you should now see the key in your ./.ssh directory listed at id_ed25519  and id_ed25519.pub
 
-   c) Add your public key on GitHub for a smooth authentication
+ ####  c) Add your public key on GitHub for a smooth authentication
 - follow instructions at https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account
 - copy your public SSH key:
     `cat ~/.ssh/id_ed25519.pub`
@@ -99,14 +100,14 @@ Note: When you use GitHub for the first time on a new server you might be prompt
 #### 1. Create a new project on GitHub and clone it to your machine
 When you start a new project, this is the easiest way to get started. You create a repo on GitHub (browser) and clone it to your machine.
 
-a) Create a new repository on GitHub
+#### a) Create a new repository on GitHub
 - log into your GitHub account using your browser
 - navigate to the list of your repositories (https://github.com/USERNAME?tab=repositories)
 - click "New" (green button right corner)
 - Fill in repo name, owner, select public/private repo, description of the repo
 - "Create repository" (green button at the end of the page)
 
-b) Clone the new repository to your machine
+#### b) Clone the new repository to your machine
 - navigate to your new repo/ the repo you want to clone in the browser version of GitHub
 - click on "Code" (green button upper right side)
 - select SSH and copy the link, the format should follow git@github.com:USERNAME/reponame.git
@@ -120,13 +121,13 @@ You should now see the repo you created on GitHub cloned on your server!
 #### 2. Push an existing directory on your machine to GitHub
 If you already created/worked on a project on a machine you can still push it to your GitHub and enjoy all the advantages. I assume you already set up the SSH key, now follow these steps:
 
-a) Create a git repository on your machine
+#### a) Create a git repository on your machine
 - navigate to your projects' directory on your machine
 - Type `git init`. This will create an empty Git repository. 
 - Type ` git add .`. This will add the files in the directory to the newly created git repository and prepare the content staged for the next commit.
 - Type `git commit` This command commits all repo changes https://git-scm.com/docs/git-commit
 
-b) Fill your remote GitHub repository with the code base on your machine
+#### b) Fill your remote GitHub repository with the code base on your machine
 This section connects your local repo to the remote GitHub repo, renames the current branch to main and pushes the main branch to GitHub setting it as the default upstream branch for future interactions 
 - navigate to your repo list in the GitHub browser
 - create an empty repo with the name of the project you have on your machine
