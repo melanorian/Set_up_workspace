@@ -69,12 +69,12 @@ To connect your gitHub account with your server you need to use an authenticatio
        - if you already have an SSH key, skip the following step of generating an SSH key 
    
    b) Generate an SSH key
-       - find detailed instructions at: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
-       - navigate to the /.ssh directory
-       - type
+- find detailed instructions at: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
+- navigate to the /.ssh directory
+- type
    `ssh-keygen -t ed25519-sk -C "your_email@example.com"`
-         to generate an SSH key using the Ed25519 algorithm. Note: not all algorithms are supported by GitHub.
-       - you should now see the key in your ./.ssh directory listed at id_ed25519  and id_ed25519.pub
+  to generate an SSH key using the Ed25519 algorithm. Note: not all algorithms are supported by GitHub.
+- you should now see the key in your ./.ssh directory listed at id_ed25519  and id_ed25519.pub
 
    c) Add your public key on GitHub for a smooth authentication
        - follow instructions at https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account
@@ -93,6 +93,8 @@ To connect your gitHub account with your server you need to use an authenticatio
 Yeahhii, we successfully generated an SSH key for authentication
 
 ### Safe your code on GitHub
+
+Note: When you use GitHub for the first time on a new server you might be prompted to sign in using your GitHub associated e-mail and password. 
 
 #### 1. Create a new project on GitHub and clone it to your machine
 When you start a new project, this is the easiest way to get started. You create a repo on GitHub (browser) and clone it to your machine.
