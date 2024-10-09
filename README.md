@@ -148,4 +148,8 @@ Happy GitHubbin
 - `git push` Creates a copy of your local git repo in the remote repo
 - `git pull` updates local git repo with changes made on the remote repo, careful, if you modified both versions you'll run into a merge conflict that needs to be resolved. Git will not know which changes are the "correct" changes that you want to keep
 
+## Transfer data
 
+If you want to transfer data from your local machine to a remote server you can use:
+
+`rsync -avz --progress ./your_machine_directory/your_file.extension your_target-server:"/remote_server_directory/your_target_directory"`
